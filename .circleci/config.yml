@@ -17,6 +17,10 @@ jobs:
           name: Run Flake8
           command:
             python3 -m flake8
+      - run:
+          name: Docker
+          command:
+            docker push kakashidota.azurecr.io/first/dockerimg:dev 
 workflows:
   build_test:
     jobs:
