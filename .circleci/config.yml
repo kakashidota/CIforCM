@@ -6,17 +6,17 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Install python packages
-        command:
-          pip install --user -r requirements.txt
+          name: Install python packages
+          command:
+            pip install --user -r requirements.txt
       - run:
-        name: Run unit test
-        command:
-          python3 -m pytest
+          name: Run unit test
+          command: 
+            python3 -m pytest
       - run:
-        name: Run Flake8
-        command:
-          python3 -m flake8
+          name: Run Flake8
+          command:
+            python3 -m flake8
 workflows:
   build_test:
     jobs:
