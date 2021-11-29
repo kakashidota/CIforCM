@@ -13,6 +13,7 @@ def home():
 def contact():
     return render_template("contact.html")
 
+
 @app.route("/dev")
 def dev():
     return "This is the dev enviorment"
