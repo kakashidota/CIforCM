@@ -12,6 +12,7 @@ def test_home_page(client):
     assert response.status_code == 200
 
 
+
 def test_contact_page(client):
     reponse = client.get("/contact")
     assert reponse.status_code == 200
