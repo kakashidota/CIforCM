@@ -13,5 +13,5 @@ def test_home_page(client):
 
 
 def test_contact_page(client):
-    reponse = client.get("/contract")
+    reponse = client.get("/contact")
     assert reponse.status_code == 200
